@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Projectssss</string>
+    <string name="facebook_app_id">922909734506985</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="title_mychildren">MyChildrenActivity</string>
+    <string name="refresh">refresh</string>
+    <string name="Tel_Activity">TelActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">	AIzaSyCeaSh9W5-WIRJEOBN00Q3bXIXuoZ5iE-U</string>
+</resources>

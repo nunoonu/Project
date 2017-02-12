@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="okhttp-android-support-3.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-android-support/3.2.0/e83166118a6147e2c1c84ce53b0054759617613e/okhttp-android-support-3.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-android-support/3.2.0/4a8a52665a362540c89f943c470453da3fe3c434/okhttp-android-support-3.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
