@@ -91,7 +91,7 @@ public class ChildActivity extends AppCompatActivity {
 
 
         // httpRequest();
-        initAlarmButton();
+        initAlarmButton("driver");
         //initTableView();
         setRowOnClick();
     }
@@ -372,17 +372,26 @@ public class ChildActivity extends AppCompatActivity {
         return sb.toString();
     }
 
-    public void initAlarmButton() {
+   /* public void initAlarmButton(String userType,Toolbar toolbar) {
         Button button = (Button) findViewById(R.id.alarm_btn);
-        button.setBackgroundResource(R.drawable.ic_action_alarm);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intentAlarm = new Intent(ChildActivity.this, AlarmActivity.class);
-                startActivity(intentAlarm);
-            }
-        });
-    }
+        if(userType.equals("child")){
+            button.setBackgroundResource(R.drawable.ic_action_alarm);
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intentAlarm = new Intent(ChildActivity.this, AlarmActivity.class);
+                    startActivity(intentAlarm);
+                }
+            });
+        }
+
+        if(userType.equals("driver")){
+            button.setText("Notify");
+            button.setTextSize(30);
+            button.setBackgroundColor(Color.RED);
+        }
+    }*/
+
 
     @Override
     protected void onDestroy() {

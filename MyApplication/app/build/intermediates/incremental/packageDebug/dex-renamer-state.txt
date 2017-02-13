@@ -1,4 +1,4 @@
-#Wed Feb 08 23:05:59 ICT 2017
-base.0=C\:\\Users\\EVILUTION\\Documents\\MyApplication\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+#Mon Feb 13 14:17:25 ICT 2017
+base.0=C\:\\Users\\EVILUTION\\Documents\\Project_sourcetree\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.0=C\:\\Users\\EVILUTION\\Documents\\MyApplication\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+file.0=C\:\\Users\\EVILUTION\\Documents\\Project_sourcetree\\MyApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

@@ -1,10 +1,10 @@
 [
     {
-        "merged": "C:\\Users\\EVILUTION\\Documents\\MyApplication\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_action_refresh1.png",
-        "source": "C:\\Users\\EVILUTION\\Documents\\MyApplication\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\ic_action_refresh1.png"
+        "merged": "C:\\Users\\EVILUTION\\Documents\\Project_sourcetree\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
+        "source": "C:\\Users\\EVILUTION\\Documents\\Project_sourcetree\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\EVILUTION\\Documents\\MyApplication\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_launcher.png",
-        "source": "C:\\Users\\EVILUTION\\Documents\\MyApplication\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\EVILUTION\\Documents\\Project_sourcetree\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi\\ic_action_refresh1.png",
+        "source": "C:\\Users\\EVILUTION\\Documents\\Project_sourcetree\\MyApplication\\app\\src\\main\\res\\mipmap-hdpi\\ic_action_refresh1.png"
     }
 ]
