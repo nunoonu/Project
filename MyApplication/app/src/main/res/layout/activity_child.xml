@@ -18,25 +18,15 @@
         android:id="@+id/toolbar_child"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" >
-         <TextView
-             android:layout_width="wrap_content"
-             android:text="Child"
-             android:layout_gravity="center"
-             android:textSize="20dp"
-             android:id="@+id/child_toolbar_title"
-             android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/alarm_btn"
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:layout_gravity="right"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:minWidth="60dp"
-            android:minHeight="60dp"
-            android:background="@null"
-            tools:minHeight="179dp" />
+            android:text="Child"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:id="@+id/child_toolbar_title"
+            android:layout_height="wrap_content" />
+
+
     </android.support.v7.widget.Toolbar>
 
     <ScrollView

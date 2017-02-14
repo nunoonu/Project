@@ -11,11 +11,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -39,6 +43,7 @@ import java.net.URI;
 import java.net.URL;
 
 import cz.msebera.android.httpclient.HttpResponse;
+import mehdi.sakout.fancybuttons.FancyButton;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
@@ -63,7 +68,7 @@ public class ChildActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_child);
-        initToolBar();
+
         tableLayout = (TableLayout) findViewById(R.id.tableLayout2);
 
         Intent intent = getIntent();
@@ -85,13 +90,16 @@ public class ChildActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        initToolBar("Child");// initToolbar before initAlarmButton and initNotifyButton
+       // initAlarmButton();
+       initNotifyButton();
 
 
 
 
 
         // httpRequest();
-        initAlarmButton("driver");
+       // initAlarmButton("driver",toolbar);
         //initTableView();
         setRowOnClick();
     }
@@ -136,6 +144,32 @@ public class ChildActivity extends AppCompatActivity {
 
             }
         });
+    }
+    public void initNotifyButton(){
+        FancyButton button = new FancyButton(this);
+        button.setBackgroundColor(Color.RED);
+       // button.setWidth(5);
+        button.setText("Notify");
+        button.setTextSize(20);
+        button.setRadius(10);
+        button.setIconResource("\uf12a");
+        button.setFontIconSize(30);
+        Toolbar.LayoutParams params = new Toolbar.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT,Gravity.RIGHT);
+        //  params.gravity = Gravity.RIGHT;
+        button.setGravity(Gravity.CENTER);
+        button.setLayoutParams(params);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ChildActivity.this,NotifyActivity.class);
+                intent.putExtra("idParent", idParent);
+                intent.putExtra("idChild", idChild);
+                intent.putExtra("jsonobject",jsonObject.toString());
+                startActivity(intent);
+                finish();
+            }
+        });
+        toolbar.addView(button);
     }
     public void postAllStudentInformation(String idParent, final String idChild){
         String personId = "personId";
@@ -372,41 +406,54 @@ public class ChildActivity extends AppCompatActivity {
         return sb.toString();
     }
 
-   /* public void initAlarmButton(String userType,Toolbar toolbar) {
-        Button button = (Button) findViewById(R.id.alarm_btn);
-        if(userType.equals("child")){
-            button.setBackgroundResource(R.drawable.ic_action_alarm);
-            button.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intentAlarm = new Intent(ChildActivity.this, AlarmActivity.class);
-                    startActivity(intentAlarm);
-                }
-            });
-        }
 
-        if(userType.equals("driver")){
-            button.setText("Notify");
-            button.setTextSize(30);
-            button.setBackgroundColor(Color.RED);
-        }
-    }*/
+    public void initAlarmButton() {
+        FancyButton button = new FancyButton(this);
+        button.setRadius(10);
+        button.setText("");
+        button.setIconResource("\uf017");
+        button.setFontIconSize(30);
+        //button.setBackgroundResource(R.drawable.ic_action_alarm);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAlarm = new Intent(ChildActivity.this, AlarmActivity.class);
+                intentAlarm.putExtra("idParent", idParent);
+                intentAlarm.putExtra("idChild", idChild);
+                intentAlarm.putExtra("jsonobject",jsonObject.toString());
+                startActivity(intentAlarm);
+                finish();
+            }
+        });
+        Toolbar.LayoutParams params = new Toolbar.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT,Gravity.RIGHT);
+        //  params.gravity = Gravity.RIGHT;
+        button.setGravity(Gravity.CENTER);
+        button.setLayoutParams(params);
+
+        toolbar.addView(button);
+
+    }
 
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d(TAG,"des");
+        Log.d(TAG,"onDestroy");
     }
 
-    public void initToolBar() {
+
+    public void initToolBar(String title) {
         try {
             Toolbar tool = (Toolbar) findViewById(R.id.toolbar_child);
             TextView textView = (TextView) findViewById(R.id.child_toolbar_title);
+            textView.setText(title);
             CustomToolbar customToolbar = new CustomToolbar(tool, textView);
             toolbar = customToolbar.getToolbar();
             Typeface typeface = Typeface.createFromAsset(getAssets(), "Capture_it.ttf");//
             textView.setTypeface(typeface);
+
+
+
         } catch (NullPointerException e) {
             e.printStackTrace();
         }

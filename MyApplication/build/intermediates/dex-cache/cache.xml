@@ -7,7 +7,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="595b1f4c9485b5e7271931538613ba4591630f7e">
+        sha1="ee227f275845fceb21f2e7e59f6694a6a7a481ce">
         <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_bb9f1df6ea8000fa2dd7334a309706914d11cf2f.jar" />
     </item>
     <item
@@ -124,7 +124,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="fd242334e045dad5be41cbb85cf3cdf9ab53a4fe">
+        sha1="5e3f16d2f350ab950e2de547e01dce514ac50717">
         <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\instant-run_d15d68e313a7056c138ae116153d5f11f30cc8d9.jar" />
     </item>
     <item
@@ -246,21 +246,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_c105cca9af0629bf91e45a88a294c3360da3c9d5.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.cuboid\cuboidcirclebutton\1.0.3\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="5a25890ba5b70ea20f4921e1fe7683449b03bd1c">
         <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.cuboid-cuboidcirclebutton-1.0.3_e0ca6ae1d07c45d018e57c2254bae632f36bf1b1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_c105cca9af0629bf91e45a88a294c3360da3c9d5.jar" />
     </item>
     <item
         is-multidex="false"
@@ -291,21 +291,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.1.0_502cdb3cb2d92e3c8272379e3014daa591606f53.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="8a372c4191f80489770a231f7be4820b204b886a">
         <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.0.0_28457d6be9b71d35c386e9c8c209a8909af7c3db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.1.0_502cdb3cb2d92e3c8272379e3014daa591606f53.jar" />
     </item>
     <item
         is-multidex="false"

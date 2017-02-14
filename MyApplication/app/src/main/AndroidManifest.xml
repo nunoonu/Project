@@ -25,6 +25,7 @@
         <activity android:name=".Activities.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -49,19 +50,15 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activities.MyChildrenActivity"
+            android:exported="true"
             android:label="@string/title_mychildren"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:exported="true">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Activities.ChildActivity" >
-
-        </activity>
+        <activity android:name=".Activities.ChildActivity"></activity>
         <activity android:name=".Activities.ServiceTypeActivity" />
         <activity android:name=".Activities.AboutBusActivity" />
         <activity android:name=".Activities.CameraActivity" />
@@ -76,8 +73,8 @@
         <activity
             android:name=".Activities.MapsActivity"
             android:label="@string/title_activity_maps" />
-        <activity android:name=".Activities.PassengersActivity"></activity>
-
+        <activity android:name=".Activities.PassengersActivity" />
+        <activity android:name=".Activities.NotifyActivity"></activity>
     </application>
 
 </manifest>

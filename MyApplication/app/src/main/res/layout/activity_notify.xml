@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_notify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.nu.myapplication.Activities.NotifyActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar_notify"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/notify_toolbar_title"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.Toolbar>
+
+        <RadioGroup
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/toolbar_notify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:id="@+id/radioGroup"
+            android:layout_alignParentBottom="true"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+                <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/ok_button_notify"
+                android:text=""
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/editText"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                fancy:fb_borderColor="#FFFFFF"
+                fancy:fb_borderWidth="1dp"
+                fancy:fb_defaultColor="@color/DarkTurquoise"
+                fancy:fb_focusColor="#9bd823"
+                fancy:fb_fontIconResource="&#xf058;"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="1000dp"
+                fancy:fb_fontIconSize = "47dp"
+                fancy:fb_textColor="#FFFFFF" />
+                <RadioButton android:id="@+id/notify_button_1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="35dp"
+                    android:layout_centerHorizontal="true"
+                    android:buttonTint="@android:color/holo_blue_light"
+                    android:text="Your child is going to restroom at gas station"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton android:id="@+id/notify_button_2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="90dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="To Home"
+                    android:buttonTint="@android:color/holo_blue_light"
+                    android:onClick="onRadioButtonClicked" />
+                <RadioButton android:id="@+id/notify_button_3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="145dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="Both"
+                    android:buttonTint="@android:color/holo_blue_light"
+                    android:onClick="onRadioButtonClicked" />
+
+                <RadioButton android:id="@+id/notify_button_4"
+                    android:layout_width="200dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:text="None"
+                    android:layout_marginTop="190dp"
+                    android:layout_centerHorizontal="true"
+                    android:buttonTint="@android:color/holo_blue_light"
+                    android:onClick="onRadioButtonClicked"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="235dp"
+                    android:layout_alignLeft="@+id/notify_button_4"
+                    android:id="@+id/notify_button_5"
+                    android:buttonTint="@android:color/holo_blue_light"
+                    android:onClick="onRadioButtonClicked"/>
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:layout_toRightOf="@+id/notify_button_5"
+                    android:layout_alignTop="@+id/notify_button_5"
+                    android:ems="10"
+                    android:gravity="top|left"
+                    android:background="@drawable/rounded_border_edittext"
+                    android:lines="8"
+                    android:id="@+id/editText" />
+
+
+
+
+            </RelativeLayout>
+        </RadioGroup>
+
+
+
+
+
+
+</RelativeLayout>
