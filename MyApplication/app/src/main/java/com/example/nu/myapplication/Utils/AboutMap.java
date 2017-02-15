@@ -27,7 +27,7 @@ public class AboutMap {
                  .position(latLng)
                  .title("Hello world")
                  .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_action_refresh1)));
-        return mMap = AboutMap.getLocationZoom(latLng,15,mMap);
+        return AboutMap.getLocationZoom(latLng,15,mMap);
     }
     public static PolylineOptions getPolylineOptions(Position[] positions){
         PolylineOptions options = new PolylineOptions().width(5).color(Color.BLUE).geodesic(true);
