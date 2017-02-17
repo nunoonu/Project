@@ -151,8 +151,11 @@ public class LoginActivity extends AppCompatActivity {
 
     }
     private void  nextActivity(){
-        Intent main = new Intent(LoginActivity.this,MyChildrenActivity.class);
-        startActivity(main);
+        Intent intent = new Intent(LoginActivity.this,MyChildrenActivity.class);
+        intent.putExtra("idParent", "125");
+        intent.putExtra("typeOfUser","parent");
+        startActivity(intent);
+        finish();
     }
     private void nextFacebookActivity(Profile profile){
         if(profile != null){

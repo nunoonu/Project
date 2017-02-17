@@ -7,7 +7,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.graphics.Point;
 import android.graphics.Typeface;
-import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
@@ -20,22 +19,15 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
-import com.example.nu.myapplication.Model.Enumerator.Role;
-import com.example.nu.myapplication.Model.Enumerator.TypeOfService;
-import com.example.nu.myapplication.Model.Person.Student;
-import com.example.nu.myapplication.Model.Position.Address;
 import com.example.nu.myapplication.R;
-import com.example.nu.myapplication.Model.*;
-import com.example.nu.myapplication.Utils.Converter;
 import com.example.nu.myapplication.Utils.GlobalVariables;
 import com.example.nu.myapplication.Utils.RoundedImageView;
-import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.RequestParams;
-import com.loopj.android.http.ResponseHandlerInterface;
 
 
 import org.json.JSONArray;
@@ -44,18 +36,13 @@ import org.json.JSONObject;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.Serializable;
-import java.net.URI;
 import java.net.URL;
-import java.util.ArrayList;
 
-import cz.msebera.android.httpclient.Header;
-import cz.msebera.android.httpclient.HttpResponse;
+import mehdi.sakout.fancybuttons.FancyButton;
 import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.FormBody;
 import okhttp3.MediaType;
-import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -71,24 +58,119 @@ public class MyChildrenActivity extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private Toolbar toolbar;
+    String idParent;
+    String typeOfUser;
+    JSONObject jsonObject = null;
     TableLayout tableLayout = null;
     private int heightOfScreen;
     private int weidhtOfScreen;
     private String result = null;
-    private String idCar = "car1";
     private final String TAG = this.getClass().getSimpleName();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mychildren);
-       tableLayout = (TableLayout) findViewById(R.id.tableLayout1);
-       // init();
-        initToolBar();
+        tableLayout = (TableLayout) findViewById(R.id.tableLayout1);
+        /*idParent = "125"; // car1 || 125
+        typeOfUser = "parent";*/
+        Intent intent = getIntent();
+        idParent = intent.getStringExtra("idParent");
+        typeOfUser = intent.getStringExtra("typeOfUser");
+        Log.d(TAG," : "+idParent + typeOfUser);
+       /* idParent = "car1";
+        typeOfUser = "driver";*/
+        // init();
+        if(typeOfUser.equals("driver"))
+        {
+            Log.d(TAG,"IF");
+            initToolBar(typeOfUser);// para driver parent
+            postOkHttpDriver(idParent);
+            initNotifyAllButton(idParent,typeOfUser);
+            initRefreshForDriver();
+            initRouteButton();
+        }
+        else if(typeOfUser.equals("parent"))
+        {
+            Log.d(TAG,"else IF");
+            initToolBar(typeOfUser);// para driver parent
+            postOkHttp(idParent);
+        }
+        else{
+           Log.d(TAG,"else : "+typeOfUser);
+        }
         showSizeOfScreen();
 
-      //  postOkHttp("125");
-        postOkHttpDriver(idCar);
 
+    }
+    public void initRouteButton(){
+        FancyButton textView = new FancyButton(this);
+        RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.activity_mychildren);
+        textView.setText("Route");
+        textView.setTextSize(22);
+        textView.setCustomTextFont("Capture_it.ttf");
+        textView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.SlateGray));
+        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        textView.setGravity(Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL);
+        params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        textView.setLayoutParams(params);
+        relativeLayout.addView(textView);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyChildrenActivity.this,AllRoutesActivity.class);
+                intent.putExtra("idParent", idParent);
+                intent.putExtra("typeOfUser",typeOfUser);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
+    public void initRefreshForDriver(){
+        FancyButton button = new FancyButton(this);
+        button.setRadius(10);
+        button.setText("");
+        button.setIconResource("\uf021");
+        button.setFontIconSize(30);
+        button.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.LightSeaGreen));
+        //button.setBackgroundResource(R.drawable.ic_action_alarm);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                startActivity(getIntent());
+            }
+        });
+        Toolbar.LayoutParams params = new Toolbar.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT, Gravity.LEFT);
+        //  params.gravity = Gravity.RIGHT;
+        button.setGravity(Gravity.CENTER);
+        button.setLayoutParams(params);
+        toolbar.addView(button);
+    }
+    public void initNotifyAllButton(final String idParent, final String typeOfUser){
+        FancyButton button = new FancyButton(this);
+        button.setBackgroundColor(Color.RED);
+        // button.setWidth(5);
+        button.setText("NotifyALL");
+        button.setTextSize(14);
+        button.setCustomTextFont("Capture_it.ttf");
+        button.setRadius(10);
+        button.setIconResource("\uf12a");
+        button.setFontIconSize(30);
+        Toolbar.LayoutParams params = new Toolbar.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT,Gravity.RIGHT);
+        //  params.gravity = Gravity.RIGHT;
+        button.setGravity(Gravity.CENTER);
+        button.setLayoutParams(params);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MyChildrenActivity.this,NotifyAllActivity.class);
+                intent.putExtra("idParent", idParent);
+                intent.putExtra("typeOfUser",typeOfUser);
+                startActivity(intent);
+                finish();
+            }
+        });
+        toolbar.addView(button);
     }
     public void postOkHttpDriver(String idCar){
         MediaType JSON = MediaType.parse("application/json; charset=utf-8");
@@ -245,7 +327,7 @@ public class MyChildrenActivity extends AppCompatActivity {
                             TableRow row = new TableRow(getApplicationContext());
                             row.setMinimumHeight(140);
                             row.setWeightSum(1);
-                            TableRow.LayoutParams lp = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT);
+                            TableRow.LayoutParams lp = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT);//layout param of table row
                             row.setLayoutParams(lp);
                                 row.setGravity(Gravity.CENTER_VERTICAL);
                             TextView tv = new TextView(getApplicationContext());
@@ -263,7 +345,7 @@ public class MyChildrenActivity extends AppCompatActivity {
                                 }
                             });
                             try {
-                                TableRow.LayoutParams params = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT,Gravity.CENTER_VERTICAL);
+                                TableRow.LayoutParams params = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT,Gravity.CENTER_VERTICAL);//layout param of textview
                                 params.setMargins(30,0,0,0);
                                 tv.setLayoutParams(params);
                                 tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP,17);
@@ -299,7 +381,7 @@ public class MyChildrenActivity extends AppCompatActivity {
 
 
 
-    public void initToolBar() {
+    public void initToolBar(String typeOfUser) {
         toolbar = (Toolbar) findViewById(R.id.toolbar_mychildren);
         Log.d("title toolbar ", "" + toolbar.getTitle());
         //  toolbar.setTitle("About Bus");
@@ -312,6 +394,12 @@ public class MyChildrenActivity extends AppCompatActivity {
         }
         TextView textView = (TextView) findViewById(R.id.mychildren_toolbar_title);
         Typeface typeface = Typeface.createFromAsset(getAssets(), "Capture_it.ttf");//TypefaceUtils.load(getAssets(), "fonts/myfont-1.otf");
+        if(typeOfUser.equals("parent"))
+            textView.setText("My Children");
+        else if(typeOfUser.equals("driver"))
+            textView.setText("Passengers");
+        else
+            Log.d(TAG,"initToolbarfail");
         textView.setTypeface(typeface);
     }
 
@@ -465,7 +553,7 @@ public class MyChildrenActivity extends AppCompatActivity {
     public void nextToChildActivity(JSONObject jsonobect,String idParent){
         Log.d(TAG,"nexttochildactivity"+jsonobect.toString());
         Intent myIntent = new Intent(MyChildrenActivity.this, ChildActivity.class);
-        myIntent.putExtra("idParent","125");
+        myIntent.putExtra("idParent",idParent);
         myIntent.putExtra("jsonobject", jsonobect.toString());
         startActivity(myIntent);
         finish();

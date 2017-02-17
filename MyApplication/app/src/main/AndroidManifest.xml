@@ -52,13 +52,13 @@
             android:name=".Activities.MyChildrenActivity"
             android:exported="true"
             android:label="@string/title_mychildren"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Activities.ChildActivity"></activity>
+        <activity android:name=".Activities.ChildActivity" />
         <activity android:name=".Activities.ServiceTypeActivity" />
         <activity android:name=".Activities.AboutBusActivity" />
         <activity android:name=".Activities.CameraActivity" />
@@ -73,7 +73,10 @@
             android:name=".Activities.ShowRouteActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".Activities.PassengersActivity" />
-        <activity android:name=".Activities.NotifyActivity"></activity>
+        <activity android:name=".Activities.NotifyActivity" />
+        <activity android:name=".Activities.NotifyAllActivity" />
+        <activity android:name=".Activities.AllRoutesActivity" />
+        <activity android:name=".Activities.AddRouteActivity" />
     </application>
 
 </manifest>

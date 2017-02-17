@@ -90,7 +90,7 @@ public class ChildActivity extends AppCompatActivity {
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        initToolBar("Child");// initToolbar before initAlarmButton and initNotifyButton
+        initToolBar("Child");// initToolbar before initAlarmButton and initNotifyAllButton
        // initAlarmButton();
        initNotifyButton();
         initBackButton();
