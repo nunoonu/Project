@@ -106,7 +106,7 @@ public class MyChildrenActivity extends AppCompatActivity {
         FancyButton textView = new FancyButton(this);
         RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.activity_mychildren);
         textView.setText("Route");
-        textView.setTextSize(22);
+        textView.setTextSize(33);
         textView.setCustomTextFont("Capture_it.ttf");
         textView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.SlateGray));
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -155,7 +155,7 @@ public class MyChildrenActivity extends AppCompatActivity {
         button.setCustomTextFont("Capture_it.ttf");
         button.setRadius(10);
         button.setIconResource("\uf12a");
-        button.setFontIconSize(30);
+       button.setFontIconSize(30);
         Toolbar.LayoutParams params = new Toolbar.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT,Gravity.RIGHT);
         //  params.gravity = Gravity.RIGHT;
         button.setGravity(Gravity.CENTER);

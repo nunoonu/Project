@@ -90,7 +90,7 @@ public class AllRoutesActivity extends AppCompatActivity {
         FancyButton textView = new FancyButton(this);
         RelativeLayout relativeLayout = (RelativeLayout) findViewById(R.id.activity_all_routes);
         textView.setText("ADD route");
-        textView.setTextSize(22);
+        textView.setTextSize(33);
         textView.setCustomTextFont("Capture_it.ttf");
         textView.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.SlateGray));
         RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);

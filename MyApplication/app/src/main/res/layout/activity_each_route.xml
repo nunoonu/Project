@@ -12,13 +12,48 @@ android:orientation="vertical">
     android:id="@+id/each_route_map"
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="500dp"
     tools:context="com.example.nu.myapplication.Activities.ShowRouteActivity"
-    android:layout_below="@+id/toolbar_showroute"
+    android:layout_below="@+id/toolbar_eachroute"
+
     android:layout_alignParentLeft="true"
     android:layout_alignParentStart="true"
-    android:layout_alignParentBottom="true" />
-
+     />
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="190dp"
+        android:id="@+id/select_route_button"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_below="@+id/each_route_map"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="@color/LightSalmon"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_fontIconResource="&#xf171;"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="0dp"
+        fancy:fb_fontIconSize = "47dp"
+        fancy:fb_textColor="#FFFFFF"/>
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_route_button"
+        android:text="Select"
+        android:layout_toLeftOf="@+id/select_route_button"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/each_route_map"
+        android:layout_alignParentBottom="true"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="@color/CornflowerBlue"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_fontIconResource="&#xf00c;"
+        fancy:fb_iconPosition="left"
+        fancy:fb_radius="0dp"
+        fancy:fb_fontIconSize = "47dp"
+        fancy:fb_textColor="#FFFFFF"/>
 <android.support.v7.widget.Toolbar
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
