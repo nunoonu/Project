@@ -3,12 +3,57 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf97318d5d1bc25d64e257a5f6a2bbb834e5b21e">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_bb9f1df6ea8000fa2dd7334a309706914d11cf2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_9a746c7f56fa664f9c3a0f42a935792dcd6ae1a2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\okhttp-3.2.0_75170789b3890c668931c7a93cb13e7450527d3a.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
         <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.0.1_c89c8652a36bfd74ec8a5b1da0a5a645978f1cab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.8.0\45b426f7796b741035581a176744d91090e2e6fb\jackson-annotations-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45b426f7796b741035581a176744d91090e2e6fb">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.8.0_19406e93d71536eef63627dc59e898ddb9066535.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_2f22a443ffb890f9533c8d9e92415bbf09f0b7de.jar" />
     </item>
     <item
         is-multidex="false"
@@ -30,6 +75,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.0_d2bb71adbfa44e2878227e7f669a52a89dc11a33.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -48,12 +102,39 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.8.6\2ef7b1cc34de149600f5e75bc2d5bf40de894e60\jackson-core-2.8.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2ef7b1cc34de149600f5e75bc2d5bf40de894e60">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\jackson-core-2.8.6_83a9f39343c973d02c7779e58377f7f024cd260e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.8.6\c43de61f74ecc61322ef8f402837ba65b0aa2bf4\jackson-databind-2.8.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c43de61f74ecc61322ef8f402837ba65b0aa2bf4">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\jackson-databind-2.8.6_b3d60aec35cd36773e39be819fb02c9d0b7b94f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="a5900b00b3c65407f8211081eb6532e12c77acc5">
         <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\instant-run_d15d68e313a7056c138ae116153d5f11f30cc8d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_963d9773341656f181574f66cd4862f9cb2652ae.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,12 +147,48 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.github.medyo\fancybuttons\1.8.3\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="db4790d8366d34973d7dca635e954b2e73de653d">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.github.medyo-fancybuttons-1.8.3_4c698367566b230321ae1c624047c14cc8f48dd4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_11799df075fa0d739656bab0fa49e76f1afd296d.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.0.1\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
         <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-10.0.1_950876b5e2afd6e1ba03a4a792e57cededffd9bf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\cz.msebera.android\httpclient\4.3.6\526a9f794eab830eae4f23a62c572878b3f491ab\httpclient-4.3.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\httpclient-4.3.6_a83e0975cae6bfbc6dae32a1756a330222b30b03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.2.0\6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c\okhttp-urlconnection-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.2.0_47148022a98fb03bf452440486d09c0c1e9ad9cf.jar" />
     </item>
     <item
         is-multidex="false"
@@ -102,6 +219,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-android-support\3.2.0\e83166118a6147e2c1c84ce53b0054759617613e\okhttp-android-support-3.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e83166118a6147e2c1c84ce53b0054759617613e">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\okhttp-android-support-3.2.0_f1be977dcc68a59a79b6248583498b0c53d3ae59.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support.constraint\constraint-layout\1.0.0-beta4\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -117,6 +243,15 @@
         revision="25.0.2"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
         <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_6371c19c1f45da42f103fbef9a64a14c34d8b6ec.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_c105cca9af0629bf91e45a88a294c3360da3c9d5.jar" />
     </item>
     <item
         is-multidex="false"
@@ -138,6 +273,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\customtabs\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-customtabs-25.0.0_3cf76cb8e5ff17ef4497586cd230f80e92e77d02.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -147,21 +291,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8a372c4191f80489770a231f7be4820b204b886a">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.0.0_28457d6be9b71d35c386e9c8c209a8909af7c3db.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d38084015027549951cbaea5d5f6fb795cc81151">
         <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.1.0_502cdb3cb2d92e3c8272379e3014daa591606f53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8a372c4191f80489770a231f7be4820b204b886a">
+        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.0.0_28457d6be9b71d35c386e9c8c209a8909af7c3db.jar" />
     </item>
     <item
         is-multidex="false"
@@ -180,150 +324,6 @@
         revision="25.0.2"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
         <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.0_bbcd086b4f8d8a13bd1b6e786b3f7ef82c4c2418.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="55b1d6759c95ce34e0d4decdb61aa0707460b4aa">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_bb9f1df6ea8000fa2dd7334a309706914d11cf2f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_9a746c7f56fa664f9c3a0f42a935792dcd6ae1a2.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\okhttp-3.2.0_75170789b3890c668931c7a93cb13e7450527d3a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.8.0\45b426f7796b741035581a176744d91090e2e6fb\jackson-annotations-2.8.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="45b426f7796b741035581a176744d91090e2e6fb">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\jackson-annotations-2.8.0_19406e93d71536eef63627dc59e898ddb9066535.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_2f22a443ffb890f9533c8d9e92415bbf09f0b7de.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.0_d2bb71adbfa44e2878227e7f669a52a89dc11a33.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.8.6\2ef7b1cc34de149600f5e75bc2d5bf40de894e60\jackson-core-2.8.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="2ef7b1cc34de149600f5e75bc2d5bf40de894e60">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\jackson-core-2.8.6_83a9f39343c973d02c7779e58377f7f024cd260e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.8.6\c43de61f74ecc61322ef8f402837ba65b0aa2bf4\jackson-databind-2.8.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c43de61f74ecc61322ef8f402837ba65b0aa2bf4">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\jackson-databind-2.8.6_b3d60aec35cd36773e39be819fb02c9d0b7b94f6.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.0.1_963d9773341656f181574f66cd4862f9cb2652ae.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.github.medyo\fancybuttons\1.8.3\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="db4790d8366d34973d7dca635e954b2e73de653d">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.github.medyo-fancybuttons-1.8.3_4c698367566b230321ae1c624047c14cc8f48dd4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_11799df075fa0d739656bab0fa49e76f1afd296d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\cz.msebera.android\httpclient\4.3.6\526a9f794eab830eae4f23a62c572878b3f491ab\httpclient-4.3.6.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\httpclient-4.3.6_a83e0975cae6bfbc6dae32a1756a330222b30b03.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.2.0\6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c\okhttp-urlconnection-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6f8a4b1435c9e0a6f9c5fe4a1be46627b848fd0c">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.2.0_47148022a98fb03bf452440486d09c0c1e9ad9cf.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-android-support\3.2.0\e83166118a6147e2c1c84ce53b0054759617613e\okhttp-android-support-3.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e83166118a6147e2c1c84ce53b0054759617613e">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\okhttp-android-support-3.2.0_f1be977dcc68a59a79b6248583498b0c53d3ae59.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.0.1_c105cca9af0629bf91e45a88a294c3360da3c9d5.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\customtabs\25.0.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="94ba691efc31bf53264db0716d9c9ec03843ea31">
-        <dex dex="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\pre-dexed\debug\com.android.support-customtabs-25.0.0_3cf76cb8e5ff17ef4497586cd230f80e92e77d02.jar" />
     </item>
     <item
         is-multidex="false"

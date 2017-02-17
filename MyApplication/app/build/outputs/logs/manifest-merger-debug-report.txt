@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml:2:1-82:12
+ADDED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml:2:1-83:12
 	package
 		ADDED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml:3:5-43
 		INJECTED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml
@@ -40,7 +40,7 @@ ADDED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src
 	android:name
 		ADDED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml:10:22-78
 application
-ADDED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml:19:5-80:19
+ADDED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml:19:5-81:19
 MERGED from [com.android.support:design:25.1.0] C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:transition:25.1.0] C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\AndroidManifest.xml:22:5-20
 MERGED from [com.facebook.android:facebook-android-sdk:4.18.0] C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.18.0\AndroidManifest.xml:28:5-38:19
@@ -194,6 +194,10 @@ activity#com.example.nu.myapplication.Activities.AddRouteActivity
 ADDED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml:79:9-65
 	android:name
 		ADDED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml:79:19-62
+activity#com.example.nu.myapplication.Activities.EachRouteActivity
+ADDED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml:80:9-75
+	android:name
+		ADDED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml:80:19-63
 uses-sdk
 INJECTED from C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.1.0] C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\AndroidManifest.xml:21:5-23:62

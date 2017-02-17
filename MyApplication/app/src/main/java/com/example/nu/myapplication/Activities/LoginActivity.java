@@ -152,8 +152,8 @@ public class LoginActivity extends AppCompatActivity {
     }
     private void  nextActivity(){
         Intent intent = new Intent(LoginActivity.this,MyChildrenActivity.class);
-        intent.putExtra("idParent", "125");
-        intent.putExtra("typeOfUser","parent");
+        intent.putExtra("idParent", "car1");
+        intent.putExtra("typeOfUser","driver");
         startActivity(intent);
         finish();
     }

@@ -77,6 +77,7 @@
         <activity android:name=".Activities.NotifyAllActivity" />
         <activity android:name=".Activities.AllRoutesActivity" />
         <activity android:name=".Activities.AddRouteActivity" />
+        <activity android:name=".Activities.EachRouteActivity"></activity>
     </application>
 
 </manifest>

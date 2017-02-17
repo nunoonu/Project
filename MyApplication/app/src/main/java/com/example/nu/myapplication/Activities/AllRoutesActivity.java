@@ -167,11 +167,16 @@ public class AllRoutesActivity extends AppCompatActivity {
                             row.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-                                /*    Intent intent = new Intent(AllRoutesActivity.this,EachRouteActivity.class);
+                                    Intent intent = new Intent(AllRoutesActivity.this,EachRouteActivity.class);
                                     intent.putExtra("idParent", idParent);
                                     intent.putExtra("typeOfUser",typeOfUser);
+                                    try {
+                                        intent.putExtra("routeNumber",finalJsonobject.get("routeNumber").toString());
+                                    } catch (JSONException e) {
+                                        e.printStackTrace();
+                                    }
                                     startActivity(intent);
-                                    finish();*/
+                                    finish();
                                 }
                             });
                             try {
