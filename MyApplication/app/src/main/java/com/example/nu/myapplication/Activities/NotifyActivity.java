@@ -2,6 +2,7 @@ package com.example.nu.myapplication.Activities;
 
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -66,6 +67,7 @@ public class NotifyActivity extends AppCompatActivity {
         button.setText("");
         button.setIconResource("\uf053");
         button.setFontIconSize(30);
+        button.setBackgroundColor(ContextCompat.getColor(getApplicationContext(),R.color.LightSeaGreen));
         //button.setBackgroundResource(R.drawable.ic_action_alarm);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_child"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +13,7 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@color/LightSeaGreen"
         android:theme="?attr/actionBarTheme"
         android:minHeight="?attr/actionBarSize"
         android:id="@+id/toolbar_child"
@@ -21,10 +22,28 @@
         <TextView
             android:layout_width="wrap_content"
             android:text="Child"
+            android:textColor="@color/Azure"
             android:layout_gravity="center"
             android:textSize="20dp"
+
             android:id="@+id/child_toolbar_title"
             android:layout_height="wrap_content" />
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/back_button_child"
+            android:text=""
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/LightSeaGreen"
+            fancy:fb_focusColor="@color/DarkCyan"
+            fancy:fb_fontIconResource="&#xf053;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="50dp"
+            fancy:fb_fontIconSize = "20dp"
+            fancy:fb_textColor="@color/Azure" />
 
 
     </android.support.v7.widget.Toolbar>
@@ -50,31 +69,28 @@
             android:layout_alignParentEnd="true">
 
              <TableRow
-                 android:background="#607D8B"
                  android:layout_width="fill_parent"
                  android:layout_height="wrap_content"
-                 android:minHeight="60px"
+                 android:minHeight="75dp"
+
                  android:id="@+id/nameRow"
                  android:padding="5dp">
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/namet"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:layout_alignParentLeft="true"
-                         android:layout_gravity="left"
-                         android:text="Name : "
-                         android:background="#FFFF4444"/>
+                         android:layout_gravity="left|center_vertical"
+                         android:text="Name : " />
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/name"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:maxLines="1"
                          android:layout_toRightOf="@+id/namet"
-
-                         android:background="#FF0099CC"
-                         />
+                        android:layout_gravity="center_vertical" />
 
 
                  <TextView
@@ -87,197 +103,181 @@
              </TableRow>
 
              <TableRow
-                 android:background="#607D8B"
                  android:layout_width="fill_parent"
                  android:layout_height="wrap_content"
-                 android:minHeight="60px"
+                 android:minHeight="75dp"
                  android:id="@+id/telRow"
                  android:padding="5dp">
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/telt"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:layout_alignParentLeft="true"
-                         android:layout_gravity="left"
-                         android:text="Tel : "
-                         android:background="#FFFF4444"/>
+                         android:layout_gravity="left|center_vertical"
+                         android:text="Tel : " />
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/tel"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:maxLines="1"
                          android:layout_toRightOf="@+id/telt"
-                         android:text="aaaaaaaaaaaaaaaaaa"
-                         android:background="#FF0099CC"
-                         />
+                         android:layout_gravity="center_vertical"
+                         android:text="aaaaaaaaaaaaaaaaaa"/>
 
              </TableRow>
 
              <TableRow
-                 android:background="#607D8B"
                  android:layout_width="fill_parent"
                  android:layout_height="wrap_content"
-                 android:minHeight="60px"
+                 android:minHeight="75dp"
                  android:id="@+id/addressRow"
                  android:padding="5dp">
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/addresst"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:layout_alignParentLeft="true"
-                         android:layout_gravity="left"
-                         android:text="Address : "
-                         android:background="#FFFF4444"/>
+                         android:layout_gravity="left|center_vertical"
+                         android:text="Address : " />
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/address"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:maxLines="1"
                          android:layout_toRightOf="@+id/addresst"
                          android:text="aaaaaaaaaaaaaaaaaa"
-                         android:background="#FF0099CC"
-                         />
+                         android:layout_gravity="center_vertical"/>
 
              </TableRow>
 
              <TableRow
-                 android:background="#607D8B"
                  android:layout_width="fill_parent"
                  android:layout_height="wrap_content"
-                 android:minHeight="60px"
+                 android:minHeight="75dp"
                  android:id="@+id/classTeacherRow"
                  android:padding="5dp">
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/classteachert"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:layout_alignParentLeft="true"
-                         android:layout_gravity="left"
-                         android:text="Class Teacher : "
-                         android:background="#FFFF4444"/>
+                         android:layout_gravity="left|center_vertical"
+                         android:text="Class Teacher : " />
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/classteacher"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:maxLines="1"
                          android:layout_toRightOf="@+id/classteachert"
                          android:text="aaaaaaaaaaaaaaaaaa"
-                         android:background="#FF0099CC"
-                         />
+                         android:layout_gravity="center_vertical"/>
 
              </TableRow>
 
              <TableRow
-                 android:background="#607D8B"
                  android:layout_width="fill_parent"
                  android:layout_height="wrap_content"
-                 android:minHeight="60px"
+                 android:minHeight="75dp"
                  android:id="@+id/classTelRow"
                  android:padding="5dp">
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/classtelt"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:layout_alignParentLeft="true"
-                         android:layout_gravity="left"
-                         android:text="Class Teacher Tel : "
-                         android:background="#FFFF4444"/>
+                         android:layout_gravity="left|center_vertical"
+                         android:text="Class Teacher Tel : " />
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/classtel"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
+                         android:layout_gravity="center_vertical"
                          android:maxLines="1"
                          android:layout_toRightOf="@+id/classtelt"
-                         android:text="aaaaaaaaaaaaaaaaaa"
-                         android:background="#FF0099CC"
-                         />
+                         android:text="aaaaaaaaaaaaaaaaaa" />
 
              </TableRow>
 
              <TableRow
-                 android:background="#607D8B"
                  android:layout_width="fill_parent"
                  android:layout_height="wrap_content"
-                 android:minHeight="60px"
+                 android:minHeight="75dp"
                  android:id="@+id/isInBusRow"
                  android:padding="5dp">
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/isinbust"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:layout_alignParentLeft="true"
-                         android:layout_gravity="left"
+                         android:layout_gravity="left|center_vertical"
                          android:text="Is in bus? : "
-                         android:background="#FFFF4444"/>
+                     />
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/isinbus"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:maxLines="1"
                          android:layout_toRightOf="@+id/isinbust"
-                         android:text="aaaaaaaaaaaaaaaaaa"
-                         android:background="#FF0099CC"
-                         />
+                         android:layout_gravity="center_vertical"
+                         android:text="aaaaaaaaaaaaaaaaaa" />
 
              </TableRow>
 
              <TableRow
-                 android:background="#607D8B"
                  android:layout_width="fill_parent"
                  android:layout_height="wrap_content"
-                 android:minHeight="60px"
+                 android:minHeight="75dp"
                  android:id="@+id/serviceRow"
                  android:padding="5dp">
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/servicet"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:layout_alignParentLeft="true"
-                         android:layout_gravity="left"
-                         android:text="Service Type? : "
-                         android:background="#FFFF4444"/>
+                         android:layout_gravity="left|center_vertical"
+                         android:text="Service Type? : " />
 
-                     <TextView
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/service"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:maxLines="1"
                          android:layout_toRightOf="@+id/servicet"
-                         android:text="aaaaaaaaaaaaaaaaaa"
-                         android:background="#FF0099CC"
-                         />
+                         android:layout_gravity="center_vertical"
+                         android:text="aaaaaaaaaaaaaaaaaa" />
 
              </TableRow>
 
              <TableRow
-                 android:background="#607D8B"
                  android:layout_width="fill_parent"
                  android:layout_height="wrap_content"
-                 android:minHeight="60px"
+                 android:minHeight="75dp"
                  android:id="@+id/aboutBusRow"
                  android:padding="5dp">
                  <RelativeLayout
-                     android:layout_width="0dp"
-                     android:layout_height="wrap_content">
-                     <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+
+                     android:gravity="center_vertical">
+                     <com.example.nu.myapplication.Utils.CustomTextView
                          android:id="@+id/aboutbus"
                          android:layout_width="wrap_content"
                          android:layout_height="wrap_content"
                          android:layout_alignParentLeft="true"
                          android:layout_gravity="left"
-                         android:text="About bus"
-                         android:background="#FFFF4444"/>
+                         android:gravity="center_vertical"
+                         android:text="About bus" />
 
 
                  </RelativeLayout>

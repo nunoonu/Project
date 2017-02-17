@@ -5,33 +5,33 @@
     density="xhdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="120351427557877"
+    timestamp="283835014506661"
     token="-6465080521419252447"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1650" />
+        duration="371" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="51" />
+        duration="81" />
     <task
         name="verifier"
-        duration="3" />
+        duration="15" />
 
     <artifact
         location="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="471223584120574"
-        verifier="COMPATIBLE" >
+        timestamp="283835014506661"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
+            location="C:\Users\EVILUTION\Documents\Project_sourcetree\MyApplication\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
     </build>
 
 </instant-run>

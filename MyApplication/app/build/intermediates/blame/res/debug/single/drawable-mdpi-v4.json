@@ -160,6 +160,10 @@
         "source": "C:\\Users\\EVILUTION\\Documents\\Project_sourcetree\\MyApplication\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\drawable-mdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "C:\\Users\\EVILUTION\\Documents\\Project_sourcetree\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\mind.jpg",
+        "source": "C:\\Users\\EVILUTION\\Documents\\Project_sourcetree\\MyApplication\\app\\src\\main\\res\\drawable-mdpi\\mind.jpg"
+    },
+    {
         "merged": "C:\\Users\\EVILUTION\\Documents\\Project_sourcetree\\MyApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal.9.png",
         "source": "C:\\Users\\EVILUTION\\Documents\\Project_sourcetree\\MyApplication\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\10.0.1\\res\\drawable-mdpi-v4\\common_google_signin_btn_text_light_normal.9.png"
     },

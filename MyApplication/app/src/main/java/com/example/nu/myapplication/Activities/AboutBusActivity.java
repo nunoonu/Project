@@ -1,18 +1,14 @@
 package com.example.nu.myapplication.Activities;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.AnimationDrawable;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
-import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.TableLayout;
@@ -28,8 +24,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Iterator;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 import okhttp3.Call;
@@ -45,7 +39,7 @@ public class AboutBusActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private AnimationDrawable d;
     private final String TAG = this.getClass().getSimpleName();
-    private String idPrent;
+    private String idParent;
     private String idChild;
     private String jsonobject;
 
@@ -61,7 +55,7 @@ public class AboutBusActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         Log.d(TAG,intent.getStringExtra("idParent"));
-        idPrent = intent.getStringExtra("idParent");
+        idParent = intent.getStringExtra("idParent");
         idChild = intent.getStringExtra("idChild");
         jsonobject = intent.getStringExtra("jsonobject");
         post(idChild);
@@ -72,7 +66,7 @@ public class AboutBusActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intentAlarm = new Intent(AboutBusActivity.this, ChildActivity.class);
-                intentAlarm.putExtra("idParent",idPrent);
+                intentAlarm.putExtra("idParent",idParent);
                 intentAlarm.putExtra("idChild",idChild);
                 intentAlarm.putExtra("jsonobject",jsonobject);
                 startActivity(intentAlarm);
@@ -113,7 +107,7 @@ public class AboutBusActivity extends AppCompatActivity {
                     Log.d(TAG, String.valueOf(jsonObject.getJSONObject("bus")));
                     Log.d(TAG, String.valueOf(jsonObject.getJSONObject("driver")));
                     Log.d(TAG, String.valueOf(jsonObject.getJSONArray("teachers")));
-                    d.stop();
+               //     d.stop();
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -141,12 +135,12 @@ public class AboutBusActivity extends AppCompatActivity {
 
     }
     public void initRefreshButton(){
-        final Button refreshBtn=(Button)findViewById(R.id.detail_refresh_btn);
-        d = (AnimationDrawable)refreshBtn.getCompoundDrawables()[0];
+        final FancyButton refreshBtn=(FancyButton) findViewById(R.id.detail_refresh_btn_about_bus);
+      //  d = (AnimationDrawable)refreshBtn.getCompoundDrawables()[0];
         refreshBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                d.start();
+           //     d.start();
                 post(idChild);
             }
         });
@@ -223,14 +217,18 @@ public class AboutBusActivity extends AppCompatActivity {
                     switch (v.getId()) {
                         case R.id.driverRow:
                             Log.d("Aboutbus", "onClickDriver");
-                            d.stop();
+                            //d.stop();
                             break;
                         case R.id.teacheronthebusRow:
                             Log.d("Aboutbus", "onClickTeacherOnTheBus");
                             break;
                         case R.id.showrouteRow:
-                            Intent intentShowRoute = new Intent(AboutBusActivity.this,MapsActivity.class);
+                            Intent intentShowRoute = new Intent(AboutBusActivity.this,ShowRouteActivity.class);
+                            intentShowRoute.putExtra("idParent", idParent);
+                            intentShowRoute.putExtra("idChild", idChild);
+                            intentShowRoute.putExtra("jsonobject",jsonobject);
                             startActivity(intentShowRoute);
+                            finish();
                             Log.d("Aboutbus", "onClickShowRouteRow");
                             break;
                         case R.id.remainingtimeRow:

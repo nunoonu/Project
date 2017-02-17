@@ -12,4 +12,5 @@ public class GlobalVariables {
     public static String GETTEACHERS = "getTeachers";
     public static String SETTYPEOFSERVICES = "setTypeOfService";
     public static String GETBUSDETAIL = "getBusDetail";
+    public static String GETALLPASSENGERINFORMATION  = " ";
 }

@@ -93,6 +93,7 @@ public class ChildActivity extends AppCompatActivity {
         initToolBar("Child");// initToolbar before initAlarmButton and initNotifyButton
        // initAlarmButton();
        initNotifyButton();
+        initBackButton();
 
 
 
@@ -142,6 +143,20 @@ public class ChildActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
+            }
+        });
+    }
+    public void initBackButton(){
+        FancyButton fancyButton = (FancyButton) findViewById(R.id.back_button_child);
+        fancyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentAlarm = new Intent(ChildActivity.this, MyChildrenActivity.class);
+                intentAlarm.putExtra("idParent",idParent);
+                intentAlarm.putExtra("idChild",idChild);
+                intentAlarm.putExtra("jsonobject",jsonObject.toString());
+                startActivity(intentAlarm);
+                finish();
             }
         });
     }
@@ -248,6 +263,7 @@ public class ChildActivity extends AppCompatActivity {
         TextView textViewIsInBus = (TextView) findViewById(R.id.isinbus);
         TextView textViewService = (TextView) findViewById(R.id.service);
         textViewName.setText((String)jsonObject.get("firstName") +"  "+ jsonObject.get("surName") );
+        //textViewName.setTextSize(TypedValue.COMPLEX_UNIT_DIP,30);
         textViewTel.setText(jsonObject.get("tel").toString());
         textViewAddress.setText(jsonObject.get("addresses").toString());
         textViewService.setText(jsonObject.get("typeOfService").toString());

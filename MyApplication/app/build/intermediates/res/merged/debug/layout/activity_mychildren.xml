@@ -9,7 +9,7 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@color/LightSeaGreen"
         android:theme="?attr/actionBarTheme"
         android:minHeight="?attr/actionBarSize"
         android:id="@+id/toolbar_mychildren"
@@ -20,6 +20,7 @@
             android:text="My Children"
             android:layout_gravity="center"
             android:textSize="20dp"
+            android:textColor="@color/Azure"
             android:id="@+id/mychildren_toolbar_title"
             android:layout_height="wrap_content" />
     </android.support.v7.widget.Toolbar>

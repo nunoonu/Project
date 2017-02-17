@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nu.myapplication.Activities.ShowRouteActivity"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/map"
+         android:name="com.google.android.gms.maps.SupportMapFragment"
+     android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+       tools:context="com.example.nu.myapplication.Activities.ShowRouteActivity"
+        android:layout_below="@+id/toolbar_showroute"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true" />
+
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/LightSeaGreen"
+            android:theme="?attr/actionBarTheme"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/toolbar_showroute"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=""
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/Azure"
+            android:id="@+id/showroute_toolbar_title"
+            android:layout_height="wrap_content"
+            />
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/back_button_showroute"
+            android:text=""
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/LightSeaGreen"
+            fancy:fb_focusColor="@color/DarkCyan"
+            fancy:fb_fontIconResource="&#xf053;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="50dp"
+            fancy:fb_fontIconSize = "20dp"
+            fancy:fb_textColor="@color/Azure" />
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/refresh_button_showroute"
+            android:text=""
+            android:layout_width="30dp"
+           android:layout_marginRight="10dp"
+            android:layout_height="30dp"
+            android:onClick="onRefreshOnClick"
+            android:layout_gravity="right"
+            android:gravity="center"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/LightSeaGreen"
+            fancy:fb_focusColor="@color/DarkCyan"
+            fancy:fb_fontIconResource="&#xf021;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="50dp"
+            fancy:fb_fontIconSize = "20dp"
+            fancy:fb_textColor="@color/Azure" />
+
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

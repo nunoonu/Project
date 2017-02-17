@@ -11,7 +11,7 @@
     <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:background="@color/LightSeaGreen"
         android:theme="?attr/actionBarTheme"
         android:minHeight="?attr/actionBarSize"
         android:id="@+id/toolbar_aboutbus"
@@ -22,36 +22,42 @@
         android:layout_height="wrap_content"
         android:text="About Bus"
         android:textSize="20dp"
+        android:textColor="@color/Azure"
         android:layout_gravity="center"
         android:id="@+id/aboutbus_toolbar_title" />
-        <Button
-            android:id="@+id/detail_refresh_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/detail_refresh_btn_about_bus"
             android:text=""
+            android:layout_width="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp"
             android:layout_gravity="right"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:drawableLeft="@drawable/progress"
-            android:minWidth="60dp"
-            android:minHeight="60dp"
-            android:background="@null"
-            tools:minHeight="179dp" />
+            android:gravity="center"
+            fancy:fb_borderWidth="1dp"
+            fancy:fb_defaultColor="@color/LightSeaGreen"
+            fancy:fb_focusColor="@color/DarkCyan"
+            fancy:fb_fontIconResource="&#xf021;"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="50dp"
+            fancy:fb_fontIconSize = "20dp"
+            fancy:fb_textColor="@color/Azure" />
         <mehdi.sakout.fancybuttons.FancyButton
             android:id="@+id/back_button_about_bus"
             android:text=""
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:gravity="left"
-            fancy:fb_borderColor="#FFFFFF"
+            android:layout_gravity="left"
+            android:layout_marginLeft="0dp"
+            android:gravity="center"
             fancy:fb_borderWidth="1dp"
-            fancy:fb_defaultColor="@color/DarkTurquoise"
-            fancy:fb_focusColor="#9bd823"
+            fancy:fb_defaultColor="@color/LightSeaGreen"
+            fancy:fb_focusColor="@color/DarkCyan"
             fancy:fb_fontIconResource="&#xf053;"
             fancy:fb_iconPosition="left"
             fancy:fb_radius="50dp"
             fancy:fb_fontIconSize = "20dp"
-            fancy:fb_textColor="@color/DeepPink" />
+            fancy:fb_textColor="@color/Azure" />
     </android.support.v7.widget.Toolbar>
 
 
@@ -72,7 +78,6 @@
         android:orientation="vertical">
 
         <TableRow
-            android:background="#607D8B"
             android:layout_width="fill_parent"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -80,30 +85,27 @@
             android:id="@+id/driverRow"
             android:padding="5dp">
 
-            <TextView
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/drivert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_gravity="left|center_vertical"
 
-                android:text="Driver : "
-                android:background="#FFFF4444"/>
+                android:text="Driver : " />
 
-            <TextView
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/driver"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
                 android:layout_gravity="center_vertical"
                 android:layout_toRightOf="@+id/drivert"
-                android:text="aaaaaaaaaaaaaaaaaa"
-                android:background="#FF0099CC" />
+                android:text="aaaaaaaaaaaaaaaaaa" />
 
         </TableRow>
 
         <TableRow
-            android:background="#607D8B"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -111,16 +113,15 @@
             android:id="@+id/teacheronthebusRow"
             android:padding="5dp">
 
-            <TextView
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/teacheronthebust"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_gravity="left|center_vertical"
-                android:text="Teacher On The Bus : "
-                android:background="#FFFF4444"/>
+                android:text="Teacher On The Bus : " />
 
-            <TextView
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/teacheronthebus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -128,13 +129,11 @@
                 android:layout_gravity="center_vertical"
                 android:layout_toRightOf="@+id/teacheronthebust"
                 android:text="aaaaaaaaaaaaaaaaaa"
-                android:background="#FF0099CC"
                 />
 
         </TableRow>
 
         <TableRow
-            android:background="#607D8B"
             android:layout_width="fill_parent"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -142,20 +141,18 @@
             android:id="@+id/showrouteRow"
             android:padding="5dp">
 
-            <TextView
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/showroute"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_gravity="left|center_vertical"
-                android:text="Show Route"
-                android:background="#FFFF4444"/>
+                android:text="Show Route"/>
 
 
 
         </TableRow>
         <TableRow
-            android:background="#607D8B"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -163,29 +160,26 @@
             android:id="@+id/remainingtimeRow"
             android:padding="5dp">
 
-            <TextView
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/remainingtimet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_gravity="left|center_vertical"
-                android:text="Remaining Time"
-                android:background="#FFFF4444"/>
-            <TextView
+                android:text="Remaining Time"/>
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/remainingtime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
                 android:layout_gravity="center_vertical"
                 android:layout_toRightOf="@+id/remainingtimet"
-                android:text="aaaaaaaaaaaaaaaaaa"
-                android:background="#FF0099CC" />
+                android:text="aaaaaaaaaaaaaaaaaa"/>
 
 
 
         </TableRow>
         <TableRow
-            android:background="#607D8B"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -193,30 +187,23 @@
             android:id="@+id/remainingdistanceRow"
             android:padding="5dp">
 
-            <TextView
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/remainingdistancet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_gravity="left|center_vertical"
-                android:text="Remaining Distance"
-                android:background="#FFFF4444"/>
-            <TextView
+                android:text="Remaining Distance"/>
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/remainingdistance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
                 android:layout_gravity="center_vertical"
                 android:layout_toRightOf="@+id/remainingdistancet"
-                android:text="aaaaaaaaaaaaaaaaaa"
-                android:background="#FF0099CC" />
-
-
-
-
+                android:text="aaaaaaaaaaaaaaaaaa"/>
         </TableRow>
         <TableRow
-            android:background="#607D8B"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -224,29 +211,26 @@
             android:id="@+id/elapsedtimeRow"
             android:padding="5dp">
 
-            <TextView
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/elapsedtimet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_gravity="left|center_vertical"
-                android:text="Elapsed Time"
-                android:background="#FFFF4444"/>
-            <TextView
+                android:text="Elapsed Time" />
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/elapsedtime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:maxLines="1"
                 android:layout_gravity="center_vertical"
                 android:layout_toRightOf="@+id/elapsedtimet"
-                android:text="aaaaaaaaaaaaaaaaaa"
-                android:background="#FF0099CC" />
+                android:text="aaaaaaaaaaaaaaaaaa" />
 
 
 
         </TableRow>
         <TableRow
-            android:background="#607D8B"
             android:layout_width="fill_parent"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -254,14 +238,13 @@
             android:id="@+id/cameraRow"
             android:padding="5dp">
 
-            <TextView
+            <com.example.nu.myapplication.Utils.CustomTextView
                 android:id="@+id/camera"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_gravity="left|center_vertical"
-                android:text="Camera"
-                android:background="#FFFF4444"/>
+                android:text="Camera" />
 
 
 
