@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "897693443257",
+    "firebase_url": "https://fir-notification-14f41.firebaseio.com",
+    "project_id": "fir-notification-14f41",
+    "storage_bucket": "fir-notification-14f41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897693443257:android:49324ce5f631b38a",
+        "android_client_info": {
+          "package_name": "com.example.nunu.notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897693443257-2e3nlgg3abrktiemsj4t7nomidft3d1k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMq5Gz3QbTvTWpWu4E1Wjq0cGVT5nKMi4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
