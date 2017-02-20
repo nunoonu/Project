@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.nu.myapplication.R;
+import com.example.nu.myapplication.Service.LocationService;
 import com.example.nu.myapplication.Utils.GlobalVariables;
 import com.facebook.AccessToken;
 import com.facebook.AccessTokenTracker;
@@ -38,6 +39,11 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent i= new Intent(getApplicationContext(), LocationService.class);
+        i.putExtra("id","idNunu");
+        getApplicationContext().startService(i);
+
+        //stopService(new Intent(LoginActivity.this,LocationService.class));
         FacebookSdk.sdkInitialize(getApplicationContext());
         setContentView(R.layout.activity_login);
         initButton();
@@ -103,6 +109,7 @@ public class LoginActivity extends AppCompatActivity {
         };
         loginButton.setReadPermissions(Arrays.asList("user_friends","public_profile","email","user_birthday"));
         loginButton.registerCallback(callbackManager, callback);
+
     }
     @Override
     protected void onResume() {

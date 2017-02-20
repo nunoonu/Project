@@ -26,6 +26,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.example.nu.myapplication.R;
+import com.example.nu.myapplication.Service.LocationService;
 import com.example.nu.myapplication.Utils.GlobalVariables;
 import com.example.nu.myapplication.Utils.RoundedImageView;
 
@@ -99,6 +100,7 @@ public class MyChildrenActivity extends AppCompatActivity {
            Log.d(TAG,"else : "+typeOfUser);
         }
         showSizeOfScreen();
+       // stopService(new Intent(MyChildrenActivity.this,LocationService.class));
 
 
     }

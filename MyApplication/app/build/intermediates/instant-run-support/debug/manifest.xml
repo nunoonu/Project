@@ -78,6 +78,9 @@
         <activity android:name="com.example.nu.myapplication.Activities.TelActivity" />
         <activity android:name="com.example.nu.myapplication.Activities.AlarmActivity" />
 
+        <service android:name="com.example.nu.myapplication.Service.LocationService" >
+        </service>
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
