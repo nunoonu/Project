@@ -1,11 +1,11 @@
 package com.example.nu.myapplication.Model.Person;
 
-import android.media.Image;
+        import android.media.Image;
 
-import com.example.nu.myapplication.Model.Enumerator.Role;
-import com.example.nu.myapplication.Model.Position.Address;
+        import com.example.nu.myapplication.Model.Enumerator.Role;
+        import com.example.nu.myapplication.Model.Position.Address;
 
-import java.util.ArrayList;
+        import java.util.ArrayList;
 
 /**
  * Created by User on 28/8/2559.
